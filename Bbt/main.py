@@ -54,8 +54,8 @@ def handleTX(x, ca):
     text_to_send = f"""<b>Round</b> : <b><a href='{config.scan_url + wagererAddress}'>{wagererAddress[0:5] + '...'}</a></b> wagered <b>{helper.roundToNearestZero(amountWagerer)} $BBT</b> and <b>{helper.getResult(resultMatch)}</b> with <b>{helper.getHandWithNumber(hand)}!</b>
 
 <b>Player Stats:</b>
-🐸Wins:{wins}  🛑Loses: {loses} ✏️Draws: {draws} -
-BBT WON/LOSS: ({int(amountWin)}, {int(amountLoss)})
+🐸Wins:{wins}  🛑Loses: {loses} Draws: {draws} 
+BBT WON: ({int(amountWin)} LOSS: {int(amountLoss)})
 """
 
     video_link = open("./YouWon.mp4", "rb") if helper.getResult(resultMatch) == 'won' else open("./YouLost.mp4", "rb")
