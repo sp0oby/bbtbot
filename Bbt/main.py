@@ -54,7 +54,7 @@ def handleTX(x, ca):
     text_to_send = f"""<b>Round</b> : <b><a href='{config.scan_url + wagererAddress}'>{wagererAddress[0:5] + '...'}</a></b> wagered <b>{helper.roundToNearestZero(amountWagerer)} $BBT</b> and <b>{helper.getResult(resultMatch)}</b> with <b>{helper.getHandWithNumber(hand)}!</b>
 
 <b>Player Stats:</b>
-🐸Wins:{wins}  🛑Loses: {loses} Draws: {draws} 
+🐸Wins:{wins}  🛑Loses: {loses} ✏️Draws: {draws} 
 BBT WON: ({int(amountWin)} LOSS: {int(amountLoss)})
 """
 
